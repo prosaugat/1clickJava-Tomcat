@@ -1,1 +1,4 @@
 # 1clickJava-Tomcat
+This is a bash script that automates the installation of Java and Apache Tomcat 10.1.6 on a Linux system. The script first updates the system's package list and installs the default JDK. Then it downloads and extracts the Apache Tomcat archive, moves it to the /opt/tomcat directory, creates a tomcat user and group, and updates the permissions of relevant directories.
+The script then creates a Systemd unit file for Tomcat, which defines the Tomcat service, including environment variables and service options such as startup and shutdown commands, user and group ownership, and restart settings. Finally, the script reloads Systemd and starts the Tomcat service, and verifies the status of Java and Tomcat.
+Overall, this script can be useful for setting up a development or production environment with Java and Tomcat on a Linux system, while also ensuring proper permissions and service management.
